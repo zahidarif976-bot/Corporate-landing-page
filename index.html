@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MegaMart - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">MegaMart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- Dropdown Shop -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-toggle="dropdown">Shop</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="shop.html">All category</a>
+            <a class="dropdown-item" href="men.html">Men</a>
+            <a class="dropdown-item" href="women.html">Women</a>
+            <a class="dropdown-item" href="kids.html">Kids</a>
+          </div>
+        </li>
+
+        <li class="nav-item"><a class="nav-link fa-cart" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link fa-cart" href="blog.html">Blog</a></li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="order.html" id="accountDropdown" role="button" data-toggle="dropdown">Order</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="order-detail.html">order detail</a>
+            <a class="dropdown-item" href="checkout.html">Checkout</a>
+            <a class="dropdown-item" href="whishlist.html">Wishlist</a>
+          </div>
+        </li>
+       <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" data-toggle="dropdown">Account</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="login.html">Login</a>
+    <a class="dropdown-item" href="signup.html">Signup</a>
+    <a class="dropdown-item" href="seller.html">Seller Center</a>
+    <a class="dropdown-item" href="admin2.html">Admin Panel</a>
+  </div>
+</li>
+
+        <li class="nav-item"><a class="nav-link fa-cart" href="contact.html">Contact Us</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div id="heroBackground" class="carousel slide hero-bg-carousel" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('assets/bg9.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('assets/bg8.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('assets/bg10.jpg');"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="display-4">Welcome to MegaMart</h1>
+      <p class="lead">Shop the best fashion for Men, Women, and Kids</p>
+      <a href="shop.html" class="btn btn-dark btn-lg">Explore Now</a>
+    </div>
+  </header>
+   <div class="container-fluid">
+  <div class="row" style="margin-top: 60px; text-align: center;">
+    <div class="col-md-12">
+      <h1><b style="color: red;">Why Shop</b> <b style="color: rgb(65, 62, 62);">with Us</b></h1>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 40px; text-align: center; justify-content: center; margin-bottom: 20px;">
+    <div class="col-md-3">
+      <div class="phase1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M273.33-160q-50 0-83-35.67-33-35.66-29.66-85h-100l14.66-66.66h112.34q15.66-18.34 37.66-28.84 22-10.5 48-10.5t48 10.5q22 10.5 37.67 28.84h187.67l89.33-386H264.67L279-800h440.33L681-633.33h122.33l116 154.66-39.33 198h-80q3.33 49.34-30 85Q736.67-160 686.67-160t-83-35.67q-33-35.66-29.67-85H386.67q3.33 49.34-30 85Q323.33-160 273.33-160ZM635-433.33h207.67l5.33-29-78-104.34H665.67L635-433.33Zm1-300-89.33 386 6-26.34L636-733.33ZM140-444.67V-560H53.33L180-754.67V-640h86.67L140-444.67Zm133.33 218q19.67 0 33.17-13.83t13.5-32.83q0-19.67-13.5-33.17T273.33-320q-19 0-32.83 13.5-13.83 13.5-13.83 33.17 0 19 13.83 32.83 13.83 13.83 32.83 13.83Zm413.34 0q19.66 0 33.16-13.83 13.5-13.83 13.5-32.83 0-19.67-13.5-33.17T686.67-320q-19 0-32.84 13.5Q640-293 640-273.33q0 19 13.83 32.83 13.84 13.83 32.84 13.83Z"/></svg>
+        <h3 style="color: white;">Fast Delivery</h3>
+        <p style="color: white;">We will deliver you the best</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="phase1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m48.67-246.67 16.66-66.66h206l-16.66 66.66h-206Zm80-160 16.66-66.66h246l-16.66 66.66h-246Zm624.33 260 4.67-33.33L777-340l24.33-200 14-113L753-146.67ZM220.67-80q-27 0-44.5-19.83-17.5-19.84-17.5-46.84H753L815.33-653h-130l-11 88.33q-2 14.34-12.66 23.17-10.67 8.83-25 8.17Q623-534 614.5-544.17 606-554.33 608-568l10.33-85h-173l-11 88q-2 14.33-12.66 23.33-10.67 9-25 8.34-13.67-.67-22.34-11-8.66-10.34-6.66-24L378-653H221.33q3.34-28.67 23.34-47.83 20-19.17 48-19.17H386l1.33-6.67q8.67-73 52.17-113.16Q483-880 556-880q62 0 101.83 48.17Q697.67-783.67 692-720h127.33q28 .33 46.67 21.33t15 49L818.33-143q-3.33 27.33-23.5 45.17Q774.67-80 747.33-80H220.67Zm232-640h173q3.66-37-19.17-65.17-22.83-28.16-58.5-28.16-40.33 0-64.83 22.83T454-726.67l-1.33 6.67Z"/></svg>
+        <h3 style="color: white;">Free Shipping</h3>
+        <p style="color: white;">We will deliver you the best</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="phase1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m345.33-60-76-129.33-148.66-31.34 16-147.33L40-480l96.67-111.33-16-147.34L269.33-770l76-130L480-839.33 614.67-900l76.66 130 148 31.33-16 147.34L920-480l-96.67 112 16 147.33-148 31.34L614.67-60 480-120.67 345.33-60Zm29.34-86.67L480-191.33l108 44.66 63.33-98.66L766-274l-11.33-116.67L833.33-480l-78.66-91.33L766-688l-114.67-26.67L586-813.33l-106 44.66-108-44.66-63.33 98.66L194-688l11.33 116.67L126.67-480l78.66 89.33L194-272l114.67 26.67 66 98.66ZM480-480Zm-42.67 136L664-569.33 615.33-616l-178 176.67-92-94L296-484.67 437.33-344Z"/></svg>
+        <h3 style="color: white;">Best Quality</h3>
+        <p style="color: white;">We will provide you the best product</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fixed-bg-section" >
+  <h1 style="font-style: italic;">MEN'S STYLE</h1>
+  <div class="container" style="background-color: white;">
+    <div class="row justify-content-center" style="padding: 20px;">
+      <!-- Product Card 1 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/men (1).jpeg" alt="Product 1">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/men (3).jpeg" alt="Product 2">
+          <h3 style="color: #141212;">300.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/men6.jpeg" alt="Product 3">
+          <h3 style="color: #141212;">200.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/men12.jpeg" alt="Product 4">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <a href="order.html"class="btn btn-cart">Add to Cart</a>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <a href="men.html" class="btn btn-outline-dark btn-lg">Explore Now</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid my-5">
+  <h2 class="text-center mb-4">Featured Products</h2>
+  <div class="owl-carousel owl-theme">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="assets/men13.jpeg" alt="Product 1">
+      <div class="p-3 text-center">
+        <p>Trendy Jacket</p>
+        <h5 style="color:red;">$399</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="assets/mshoes (10).jpeg" alt="Product 2">
+      <div class="p-3 text-center">
+        <p>Classic Sneakers</p>
+        <h5 style="color:red;">$520</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="assets/mwatch (1).jpeg" alt="Product 3">
+      <div class="p-3 text-center">
+        <p>Smart Watch</p>
+        <h5 style="color:red;">$450</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="assets/glasses (3).jpeg" alt="Product 4">
+      <div class="p-3 text-center">
+        <p>Leather Bag</p>
+        <h5 style="color:red;">$300</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="text-align: center; justify-content: center;">
+   <a href="women.html" class="btn btn-outline-dark btn-lg">Explore Now</a></div>
+</div>
+
+<div class="fixed-bg-section" >
+  <h1 style="font-style: italic;">WOMEN'S STYLE</h1>
+  <div class="container" style="background-color: white;">
+    <div class="row justify-content-center" style="padding: 20px;">
+      <!-- Product Card 1 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/w (2).jpeg" alt="Product 1">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/w (3).jpeg" alt="Product 2">
+          <h3 style="color: #141212;">300.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/w (5).jpeg" alt="Product 3">
+          <h3 style="color: #141212;">200.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/w (6).jpeg" alt="Product 4">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <a href="order.html"class="btn btn-cart">Add to Cart</a>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <a href="women.html" class="btn btn-outline-dark btn-lg">Explore Now</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid my-5">
+  <h2 class="text-center mb-4">Featured Products of Women's</h2>
+  <div class="owl-carousel owl-theme">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="assets/glasses (17).jpeg" alt="Product 1">
+      <div class="p-3 text-center">
+        <p>glasses</p>
+        <h5 style="color:red;">$399</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="assets/wshoes.jpeg" alt="Product 2">
+      <div class="p-3 text-center">
+        <p>Classic Sneakers</p>
+        <h5 style="color:red;">$520</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="assets/wwatch (3).jpeg" alt="Product 3">
+      <div class="p-3 text-center">
+        <p>Smart Watch</p>
+        <h5 style="color:red;">$450</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="assets/wbag6.jpeg" alt="Product 4">
+      <div class="p-3 text-center">
+        <p>Leather Bag</p>
+        <h5 style="color:red;">$300</h5>
+      </div>
+      <div class="product-buttons">
+        <a href="cart.html" class="btn btn-cart">Add to Cart</a>
+        <button class="btn btn-order">Order Now</button>
+      </div>
+    </div>
+
+  </div>
+    <div class="row" style="text-align: center; justify-content: center;">
+   <a href="women.html" class="btn btn-outline-dark btn-lg">Explore Now</a></div>
+</div>
+</div>
+<div class="row" style="text-align: center; justify-content: center;">
+  <h1 style="font-style: italic;">KID'S STYLE</h1></div>
+  <div class="container-fluid" style="background-color: white;">
+    <div class="row justify-content-center" style="padding: 20px;">
+      <!-- Product Card 1 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/kid (1).jpeg" alt="Product 1">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/kid (4).jpeg" alt="Product 2">
+          <h3 style="color: #141212;">300.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/kid (6).jpeg" alt="Product 3">
+          <h3 style="color: #141212;">200.00$</h3>
+          <div class="product-buttons">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col-md-3">
+        <div class="product-card" style="text-align: center;">
+          <img src="assets/kid (8).jpeg" alt="Product 4">
+          <h3 style="color: #141212;">430.00$</h3>
+          <div class="product-buttons">
+            <a href="order.html"class="btn btn-cart">Add to Cart</a>
+            <button class="btn btn-order">Order Now</button>
+          </div>
+        </div>
+  </div>
+   <div class="row" style="text-align: center; justify-content: center;">
+   <a href="kids.html" class="btn btn-outline-dark btn-lg">Explore Now</a></div>
+<!-- jQuery (full, not slim) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 4,
+      loop: true,
+      margin: 15,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 }
+      }
+    });
+  });
+</script>
+ </div>
+
+<div class="container py-5">
+  <h2 class="section-title" style="font-style: italic;">Trending Products</h2>
+  
+  <div class="owl-carousel owl-theme">
+    
+    <!-- Product 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/mshoes (9).jpeg" alt="Shoes">
+        </div>
+        <div class="flip-card-back">
+          <h5>Classic Sneakers</h5>
+          <p>$120</p>
+          <button class="btn btn-buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/glasses (10).jpeg" alt="Jacket">
+        </div>
+        <div class="flip-card-back">
+          <h5>Glasses</h5>
+          <p>$199</p>
+          <button class="btn btn-buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/mwatch (1).jpeg" alt="Watch">
+        </div>
+        <div class="flip-card-back">
+          <h5>Smart Watch</h5>
+          <p>$250</p>
+          <button class="btn btn-buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/wbag6.jpeg" alt="Bag">
+        </div>
+        <div class="flip-card-back">
+          <h5>Leather Bag</h5>
+          <p>$180</p>
+          <button class="btn btn-buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+         <div class="container-fluid review-carousel">
+  <div class="container-fluid">
+    <h2 class="text-center mb-5">What Our Customers Say</h2>
+    <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+      
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#reviewCarousel" data-slide-to="1"></li>
+        <li data-target="#reviewCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Review Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="review-item">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1">
+            <p class="review-text">"Amazing quality products! Delivery was super fast and packaging was neat. Highly recommend."</p>
+            <h5 class="review-name">Sarah Johnson</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="review-item">
+            <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Customer 2">
+            <p class="review-text">"Best online shopping experience I’ve had so far. Customer service was very helpful."</p>
+            <h5 class="review-name">Michael Smith</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="review-item">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer 3">
+            <p class="review-text">"The products exceeded my expectations. Will definitely shop again!"</p>
+            <h5 class="review-name">Emily Davis</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#reviewCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5>Newsletter</h5>
+        <p>Subscribe to get the latest updates and offers.</p>
+        <form class="form-inline">
+          <input type="email" class="newsletter-input" placeholder="Enter your email">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Lahore, Pakistan</p>
+        <p><i class="fas fa-phone-alt"></i> +92 300 1234567</p>
+        <p><i class="fas fa-envelope"></i> zahidarif976@gami.com</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="https://wa.me/923001234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer-bottom">
+      <p>© 2025 YourCompany. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
